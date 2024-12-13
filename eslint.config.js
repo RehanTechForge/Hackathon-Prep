@@ -20,6 +20,16 @@ const eslintConfig = [
       "react/no-unescaped-entities": "off", // Disable unescaped entities warning
     },
   },
+  {
+    overrides: [
+      {
+        files: ["*.ts", "*.tsx"],
+        rules: {
+          "@typescript-eslint/no-explicit-any": "off", // Disable 'any' type warning for TypeScript
+        },
+      },
+    ],
+  },
 ];
 
 export default eslintConfig;
