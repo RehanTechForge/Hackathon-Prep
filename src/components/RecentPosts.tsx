@@ -29,7 +29,7 @@ export default function RecentPosts({ posts }: { posts: Post[] }) {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">
                   <Link
-                    href={`/post/${post.slug.current}`}
+                    href={`/posts/${post.slug.current}`}
                     className="hover:underline"
                   >
                     {post.title}
